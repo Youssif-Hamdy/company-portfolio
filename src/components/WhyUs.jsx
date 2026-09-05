@@ -116,12 +116,17 @@ export default function WhyUs() {
           </div>
         </div>
 
-        <div className="border-t border-slate-200 pt-12">
-          <div className="mx-auto mb-16 max-w-3xl space-y-3 text-center">
-            <span className="section-badge">{t.whyUs.testimonialBadge}</span>
-            <h2 className="section-title">
+        {/* ── Testimonials Section ── */}
+        <div className="border-t border-slate-200/80 pt-16">
+          <div className="mx-auto mb-16 max-w-3xl space-y-4 text-center">
+            <span className="inline-block rounded-full bg-cyan-50 px-4 py-1.5 text-[11px] font-bold uppercase tracking-[0.22em] text-cyan-600 ring-1 ring-cyan-200/60">
+              {t.whyUs.testimonialBadge}
+            </span>
+            <h2 className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
               {t.whyUs.testimonialTitle}{' '}
-              <span className="glow-gradient-text">{t.whyUs.testimonialAccent}</span>
+              <span className="bg-gradient-to-r from-brand-600 via-cyan-600 to-blue-600 bg-clip-text text-transparent">
+                {t.whyUs.testimonialAccent}
+              </span>
             </h2>
           </div>
 
@@ -129,28 +134,50 @@ export default function WhyUs() {
             {testimonials.map((testi) => (
               <div
                 key={testi.id}
-                className="glass-card relative flex flex-col justify-between rounded-2xl border-slate-800 p-8"
+                className="group relative flex flex-col justify-between overflow-hidden rounded-3xl bg-white p-8 shadow-xl shadow-slate-200/60 ring-1 ring-slate-200/70 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-cyan-500/15 hover:ring-cyan-400/50"
               >
-                <Quote className="absolute left-6 top-6 h-10 w-10 text-brand-500/20" />
-                <div className="relative z-10 space-y-4">
-                  <div className="flex items-center gap-1 text-amber-400">
+                {/* Top accent line on hover */}
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-brand-500 via-cyan-400 to-blue-600 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+
+                {/* Subtle background glow */}
+                <div className="pointer-events-none absolute -right-12 -top-12 h-36 w-36 rounded-full bg-cyan-500/5 blur-2xl transition-all duration-500 group-hover:bg-cyan-500/10" />
+
+                <div className="relative z-10 space-y-5">
+                  {/* Rating */}
+                  <div className="flex items-center gap-1">
                     {[...Array(testi.rating)].map((_, i) => (
-                      <Star key={i} className="h-4 w-4 fill-amber-400 text-amber-400" />
+                      <Star key={i} className="h-4.5 w-4.5 fill-amber-400 text-amber-400 drop-shadow-sm" />
                     ))}
                   </div>
-                  <p className="text-sm italic leading-relaxed text-slate-600">
+
+                  {/* Quote Icon watermark */}
+                  <Quote className="h-8 w-8 text-brand-500/25 transition-colors duration-300 group-hover:text-cyan-500/40" />
+
+                  {/* Testimonial text */}
+                  <p
+                    className="text-sm font-medium leading-[1.8] text-slate-700 sm:text-[15px]"
+                    style={{ fontFamily: locale === 'ar' ? "'Tajawal', sans-serif" : "'Plus Jakarta Sans', sans-serif" }}
+                  >
                     &ldquo;{L(testi.text, locale)}&rdquo;
                   </p>
                 </div>
-                <div className="mt-6 flex items-center gap-3 border-t border-slate-200 pt-6">
-                  <img
-                    src={testi.avatar}
-                    alt={L(testi.name, locale)}
-                    className="h-11 w-11 rounded-full border border-cyan-500/30 object-cover"
-                  />
+
+                {/* Client Profile with Partner Logo */}
+                <div className="relative z-10 mt-8 flex items-center gap-4 border-t border-slate-100 pt-6">
+                  <div className="relative flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-full bg-white p-1 ring-2 ring-slate-200/80 shadow-md transition-all duration-300 group-hover:ring-cyan-500/50">
+                    <img
+                      src={encodeURI(testi.avatar)}
+                      alt={L(testi.name, locale)}
+                      className="h-full w-full rounded-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                  </div>
                   <div>
-                    <h4 className="text-sm font-bold text-slate-900">{L(testi.name, locale)}</h4>
-                    <p className="text-xs text-slate-400">{L(testi.role, locale)}</p>
+                    <h4 className="text-base font-bold text-slate-900 transition-colors duration-300 group-hover:text-brand-600">
+                      {L(testi.name, locale)}
+                    </h4>
+                    <p className="text-xs font-semibold text-slate-400">
+                      {L(testi.role, locale)}
+                    </p>
                   </div>
                 </div>
               </div>

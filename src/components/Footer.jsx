@@ -14,9 +14,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-12 border-b border-slate-200 pb-12 md:grid-cols-2 lg:grid-cols-12">
           <div className="space-y-4 lg:col-span-5">
             <div className="flex items-center gap-3">
-              <div className="logo-wrap flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden sm:h-16 sm:w-16">
+              <div className="logo-wrap flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-xl sm:h-14 sm:w-14">
                 <img
-                  src="/logo1.png"
+                  src="/logo.svg"
                   alt="ORQEVA"
                   className="h-full w-full object-contain"
                 />

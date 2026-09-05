@@ -83,6 +83,28 @@ html[dir="rtl"] .marquee-inner { animation-name: marquee-scroll-rtl; }
   100% { transform: translate3d(33.333%, 0, 0); }
 }
 
+/* Clients section — premium circular logo marquee */
+.clients-marquee-inner {
+  animation: clients-scroll 38s linear infinite;
+  will-change: transform;
+  width: max-content;
+  padding-block: 1.5rem;
+}
+html[dir="rtl"] .clients-marquee-inner { animation-name: clients-scroll-rtl; }
+
+.clients-marquee-wrap:hover .clients-marquee-inner {
+  animation-play-state: paused;
+}
+
+@keyframes clients-scroll {
+  0%   { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-33.333%, 0, 0); }
+}
+@keyframes clients-scroll-rtl {
+  0%   { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(33.333%, 0, 0); }
+}
+
 /* Why Us — journey path timeline */
 .timeline-path { min-height: 200px; }
 .timeline-line {

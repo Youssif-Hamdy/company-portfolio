@@ -10,10 +10,10 @@ export const companyDetails = {
     ar: 'شركة متخصصة في تطوير البرمجيات المخصصة، تطبيقات الجوال، الأنظمة السحابية، وحلول الذكاء الاصطناعي بمستويات أمان وجودة عالمية.',
     en: 'Specialists in custom software, mobile apps, cloud systems, and AI solutions with world-class security and quality.',
   },
-  phone: '+20 100 123 4567',
+  phone: '+20 101 994 8341',
   email: 'info@codenext-tech.com',
   location: { ar: 'القاهرة، مصر - التجمع الخامس', en: 'Cairo, Egypt – Fifth Settlement' },
-  whatsapp: 'https://wa.me/201001234567',
+  whatsapp: 'https://wa.me/201019948341',
   socials: {
     github: 'https://github.com',
     linkedin: 'https://linkedin.com',
@@ -284,36 +284,36 @@ export const whyChooseUs = [
 export const testimonials = [
   {
     id: 1,
-    name: { ar: 'م. أحمد عبد الرحمن', en: 'Eng. Ahmed Abdel Rahman' },
-    role: { ar: 'الرئيس التنفيذي - شركة ريادة للتطوير', en: 'CEO – Riada Development' },
+    name: { ar: 'شيف فايندر', en: 'Chef Finder' },
+    role: { ar: 'إدارة شيف فايندر', en: 'Executive Leadership — Chef Finder' },
     text: {
       ar: 'التعامل مع الفريق كان تجربة رائعة حقاً، تم تنفيذ مشروعنا بأعلى درجة من الاحترافية والسرعة قبل الوقت المحدد.',
-      en: 'Working with the team was excellent — our project was delivered professionally and ahead of schedule.',
+      en: 'Working with the team was an exceptional experience — our platform was delivered with top engineering quality and ahead of schedule.',
     },
     rating: 5,
-    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop',
+    avatar: '/logos/chef.jpeg',
   },
   {
     id: 2,
-    name: { ar: 'د. سارة المنصوري', en: 'Dr. Sara Al-Mansouri' },
-    role: { ar: 'مديرة مركز المستقبل الرقمي', en: 'Director – Digital Future Center' },
+    name: { ar: 'مجموعة نبرس', en: 'Nibras Group' },
+    role: { ar: 'الرئيس التنفيذي — نبرس', en: 'CEO — Nibras Group' },
     text: {
-      ar: 'أنظمة الذكاء الاصطناعي وتطبيق الجوال الذي طوروه لنا غير مجرى أعمالنا وزاد من رضا المراجعين بنسبة 40%.',
-      en: 'The AI systems and mobile app they built transformed our operations and raised client satisfaction by 40%.',
+      ar: 'أنظمة البرمجيات وحلول الويب التي طوروها لنا غيرت مجرى أعمالنا وزادت من رضا عملائنا بنسبة كبيرة.',
+      en: 'The custom web software and digital tools built for us transformed our operations and greatly raised client satisfaction.',
     },
     rating: 5,
-    avatar: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=200&auto=format&fit=crop',
+    avatar: '/logos/nibras.png',
   },
   {
     id: 3,
-    name: { ar: 'أ. خالد العتيبي', en: 'Mr. Khaled Al-Otaibi' },
-    role: { ar: 'مؤسس منصة سمارتر', en: 'Founder – Smarter Platform' },
+    name: { ar: 'نغم بيروت', en: 'Nagham Beirut' },
+    role: { ar: 'إدارة نغم بيروت', en: 'Leadership — Nagham Beirut' },
     text: {
-      ar: 'فريق متمكن للغاية في React والأنظمة السحابية. الكود نظيف والتصميم جذاب جداً لمستخدمينا.',
-      en: 'Highly skilled in React and cloud systems. Clean code and a design our users love.',
+      ar: 'فريق متمكن للغاية في الهندسة والحلول البرمجية الحديثة. الكود نظيف والتصميم مبهر وجذاب لمستخدمينا.',
+      en: 'Highly skilled team in modern engineering and software solutions. Clean code and a design our users absolutely love.',
     },
     rating: 5,
-    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop',
+    avatar: '/logos/nagham.PNG',
   },
 ];
 

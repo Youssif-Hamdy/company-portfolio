@@ -53,16 +53,25 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           <a href="#hero" className="flex items-center gap-3 group">
             <div
-              className={`logo-wrap relative flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden rounded-xl transition-all duration-300 sm:h-16 sm:w-16 ${
-                overHero
-                  ? 'group-hover:drop-shadow-[0_0_12px_rgba(34,211,238,0.45)]'
-                  : 'group-hover:drop-shadow-[0_0_10px_rgba(6,182,212,0.35)]'
-              }`}
+              className="logo-wrap relative flex h-12 w-12 shrink-0 items-center justify-center transition-all duration-300 sm:h-14 sm:w-14"
             >
+              {/* whiteLogo over hero: mix-blend-mode:multiply removes white bg, leaves only the mark */}
               <img
-                src="/logo1.png"
+                src="/whiteLogo.jpeg"
                 alt="ORQEVA"
-                className="h-full w-full object-contain transition-transform duration-300 group-hover:scale-105"
+                style={{ mixBlendMode: 'multiply' }}
+                className={`absolute inset-0 h-full w-full object-contain transition-all duration-500 group-hover:scale-105 ${
+                  overHero ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'
+                }`}
+              />
+              {/* logo.svg after scroll: multiply strips white bg on dark glass nav */}
+              <img
+                src="/logo.svg"
+                alt="ORQEVA"
+                style={{ mixBlendMode: 'multiply' }}
+                className={`absolute inset-0 h-full w-full object-contain transition-all duration-500 group-hover:scale-105 ${
+                  overHero ? 'opacity-0 scale-95 pointer-events-none' : 'opacity-100 scale-100'
+                }`}
               />
             </div>
             <span
