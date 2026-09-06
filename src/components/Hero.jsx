@@ -76,7 +76,10 @@ export default function Hero() {
             {/* Eyebrow label */}
             <p
               className="mb-5 text-[11px] font-semibold uppercase tracking-[0.3em] text-cyan-400"
-              style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", letterSpacing: '0.3em' }}
+              style={{
+                fontFamily: "'Plus Jakarta Sans', sans-serif",
+                letterSpacing: isAr ? '0' : '0.3em',
+              }}
             >
               ORQEVA — {isAr ? 'وكالة برمجيات وذكاء اصطناعي' : 'Software & AI Agency'}
             </p>

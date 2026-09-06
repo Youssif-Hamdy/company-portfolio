@@ -295,8 +295,8 @@ export const testimonials = [
   },
   {
     id: 2,
-    name: { ar: 'مجموعة نبرس', en: 'Nibras Group' },
-    role: { ar: 'الرئيس التنفيذي — نبرس', en: 'CEO — Nibras Group' },
+    name: { ar: 'مجموعة نبراس', en: 'Nibras Group' },
+    role: { ar: 'الرئيس التنفيذي — نبراس', en: 'CEO — Nibras Group' },
     text: {
       ar: 'أنظمة البرمجيات وحلول الويب التي طوروها لنا غيرت مجرى أعمالنا وزادت من رضا عملائنا بنسبة كبيرة.',
       en: 'The custom web software and digital tools built for us transformed our operations and greatly raised client satisfaction.',
