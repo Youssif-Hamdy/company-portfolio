@@ -52,23 +52,19 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           <a href="#hero" className="flex items-center gap-3 group">
-            <div
-              className="logo-wrap relative flex h-12 w-12 shrink-0 items-center justify-center transition-all duration-300 sm:h-14 sm:w-14"
-            >
-              {/* whiteLogo over hero: mix-blend-mode:multiply removes white bg, leaves only the mark */}
+            <div className="relative flex h-12 w-12 shrink-0 items-center justify-center transition-all duration-300 sm:h-14 sm:w-14">
+              {/* Logo فوق الـ Hero - خلفية داكنة */}
               <img
-                src="/whiteLogo.jpeg"
+                src="/notBackgroung.png"
                 alt="ORQEVA"
-                style={{ mixBlendMode: 'multiply' }}
                 className={`absolute inset-0 h-full w-full object-contain transition-all duration-500 group-hover:scale-105 ${
                   overHero ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'
                 }`}
               />
-              {/* logo.svg after scroll: multiply strips white bg on dark glass nav */}
+              {/* Logo بعد السكرول - الناف بار أبيض */}
               <img
-                src="/logo.svg"
+                src="/logoblack.png"
                 alt="ORQEVA"
-                style={{ mixBlendMode: 'multiply' }}
                 className={`absolute inset-0 h-full w-full object-contain transition-all duration-500 group-hover:scale-105 ${
                   overHero ? 'opacity-0 scale-95 pointer-events-none' : 'opacity-100 scale-100'
                 }`}
