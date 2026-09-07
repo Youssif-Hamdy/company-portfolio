@@ -42,7 +42,7 @@ export default function Contact() {
         ];
 
     const fullMessage = messageLines.join('\n');
-    const waUrl = `https://wa.me/201019948341?text=${encodeURIComponent(fullMessage)}`;
+    const waUrl = `https://wa.me/201208955733?text=${encodeURIComponent(fullMessage)}`;
 
     // Open WhatsApp in new tab
     setTimeout(() => {
@@ -101,7 +101,7 @@ export default function Contact() {
                   <div>
                     <h4 className="text-xs font-bold uppercase tracking-wider text-slate-400">{t.contact.phone}</h4>
                     <a
-                      href="https://wa.me/201019948341"
+                      href="https://wa.me/201208955733"
                       target="_blank"
                       rel="noreferrer"
                       className="mt-0.5 inline-flex items-center gap-1.5 text-base font-bold text-slate-900 transition-colors duration-300 hover:text-emerald-600"
@@ -153,7 +153,7 @@ export default function Contact() {
 
             {/* Direct WhatsApp CTA Button */}
             <a
-              href="https://wa.me/201019948341"
+              href="https://wa.me/201208955733"
               target="_blank"
               rel="noreferrer"
               className="group relative flex w-full items-center justify-center gap-3 overflow-hidden rounded-2xl bg-emerald-600 px-6 py-4 text-base font-bold text-white shadow-xl shadow-emerald-600/25 transition-all duration-300 hover:-translate-y-0.5 hover:bg-emerald-500 hover:shadow-2xl hover:shadow-emerald-600/35 active:scale-[0.99]"
@@ -183,7 +183,7 @@ export default function Contact() {
                     </p>
                   </div>
                   <a
-                    href="https://wa.me/201019948341"
+                    href="https://wa.me/201208955733"
                     target="_blank"
                     rel="noreferrer"
                     className="inline-flex items-center gap-2 rounded-xl bg-emerald-600 px-6 py-3 text-sm font-bold text-white shadow-lg transition-all hover:bg-emerald-500"

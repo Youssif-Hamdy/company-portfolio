@@ -10,15 +10,14 @@ export const companyDetails = {
     ar: 'شركة متخصصة في تطوير البرمجيات المخصصة، تطبيقات الجوال، الأنظمة السحابية، وحلول الذكاء الاصطناعي بمستويات أمان وجودة عالمية.',
     en: 'Specialists in custom software, mobile apps, cloud systems, and AI solutions with world-class security and quality.',
   },
-  phone: '+20 101 994 8341',
-  email: 'info@codenext-tech.com',
+  phone: '+20 120 895 5733',
+  email: 'orqevasoftware@gmail.com',
   location: { ar: 'القاهرة، مصر - التجمع الخامس', en: 'Cairo, Egypt – Fifth Settlement' },
-  whatsapp: 'https://wa.me/201019948341',
+  whatsapp: 'https://wa.me/201208955733',
   socials: {
-    github: 'https://github.com',
-    linkedin: 'https://linkedin.com',
-    twitter: 'https://twitter.com',
-    facebook: 'https://facebook.com',
+    facebook: 'https://www.facebook.com/profile.php?id=61594189232360&mibextid=wwXIfr',
+    tiktok: 'https://www.tiktok.com/@orqeva?_r=1&_t=ZS-99XBKGqabOE',
+    instagram: 'https://www.instagram.com/orqeva.software?stkn=bGZidTgzZzRraDVu&utm_source=qr',
   },
 };
 
